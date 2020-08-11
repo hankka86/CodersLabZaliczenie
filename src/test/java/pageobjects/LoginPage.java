@@ -10,8 +10,7 @@ public class LoginPage {
     private static WebDriver driver;
 
     public LoginPage(WebDriver diver ) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;}
+         this.driver = driver;}
 
     @FindBy(name="email")
     private WebElement loginInput;
@@ -39,4 +38,5 @@ public class LoginPage {
         WebElement userName = driver.findElement(By.xpath("//a[@class='account']"));
         return userName.getText();
     }
+
 }
