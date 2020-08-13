@@ -9,8 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
     private static WebDriver driver;
 
-    public LoginPage(WebDriver diver ) {
-         this.driver = driver;}
+    public LoginPage(WebDriver driver ) {
+         this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
 
     @FindBy(name="email")
     private WebElement loginInput;
