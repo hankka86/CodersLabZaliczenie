@@ -1,4 +1,5 @@
 Feature: Zadanie2
+
   Scenario: user kupuje 5 szt przedmiotów ze sklepu z rabarem 20%, wybiera metode platnosci i adres dostawy, na koniec robi screenshota
     Given otwieramy przegladarke i logujemy sie na konto Antonio Banderasa
     When wybieramy sweter do zakupu

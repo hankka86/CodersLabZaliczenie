@@ -9,18 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
     private static WebDriver driver;
 
-    public LoginPage(WebDriver driver ) {
-         this.driver = driver;
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(name="email")
+    @FindBy(name = "email")
     private WebElement loginInput;
 
-    @FindBy(name="password")
+    @FindBy(name = "password")
     private WebElement passwordInput;
 
-    @FindBy(id="submit-login")
+    @FindBy(id = "submit-login")
     private WebElement signInButton;
 
 
@@ -36,6 +36,7 @@ public class LoginPage {
         //WebElement signInButton = driver.findElement(By.id("submit-login"));
         signInButton.click();
     }
+
     public String getLoggedUsername() {
         WebElement userName = driver.findElement(By.xpath("//a[@class='account']"));
         return userName.getText();

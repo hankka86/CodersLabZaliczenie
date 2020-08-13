@@ -32,7 +32,7 @@ public class MyStepdefs {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginAs("dtzkdklnudbgvvbzxt1@ttirv.org", "bardzotajnehaslo");
 
-        
+
     }
 
 
@@ -66,15 +66,15 @@ public class MyStepdefs {
                "00-000\n" +
                "United Kingdom\n" +
                "\uE254 Update \uE872 Delete";*/
-        String costam= alias + "\n" +
+        String costam = alias + "\n" +
                 "Antonio Banderas\n" +
-               address +"\n" +
+                address + "\n" +
                 city + "\n" +
                 zipCode + "\n" +
                 country + "\n" +
                 "\uE254 Update \uE872 Delete";
         Assert.assertEquals(costam, addressPage.getLastAddress(alias));
-       // throw new PendingException();
+        // throw new PendingException();
     }
 
 
